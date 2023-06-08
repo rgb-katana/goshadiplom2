@@ -1,0 +1,19 @@
+[
+    {
+        "fio":"TATEVOSYAN GEORGA ERIKOVICH",
+        "text":"Lorem ipsum dolor sit amet consectetur. Mauris tortor laoreet in eu enim. Id lectus ipsum lacinia et tincidunt ac consectetur. Eleifend mi in congue nunc faucibus magna commodo malesuada. Maecenas morbi tristique malesuada in ante imperdiet etiam donec posuere.",
+        "role":"TEAMLEAD",
+        "age":"20 Y.O.",
+        "food":"KORNISHON",
+        "sign":"PIECES"
+    },
+    {
+        "fio":"PONKARTO LIZA",
+        "text":"Lorem ipsum dolor sit amet consectetur. Mauris tortor laoreet in eu enim. Id lectus ipsum lacinia et tincidunt ac consectetur. Eleifend mi in congue nunc faucibus magna commodo malesuada. Maecenas morbi tristique malesuada in ante imperdiet etiam donec posuere.",
+        "role":"DESIGNE & FRONT",
+        "age":"20 Y.O.",
+        "food":"KABACHOK",
+        "sign":"CANCER"
+    }
+
+]

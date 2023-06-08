@@ -1,0 +1,29 @@
+.Header {
+
+  /* .Page-Header(Legacy) */
+
+  /* Auto layout */
+
+  display: flex;
+  align-items: center;
+  margin: 0 9.5%;
+  
+
+  height: 75px;
+
+
+  /* Inside auto layout */
+
+  justify-content: space-between;
+  .buttonGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 200px;
+  }
+
+  .checkButton{
+    margin-right: 170px;
+  }
+}

@@ -1,0 +1,27 @@
+.functionInfo {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  .header {
+    /* Body/regular */
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    /* Character/Primary .85 */
+
+    color: rgba(0, 0, 0, 0.85);
+  }
+  .context{
+    width: fill;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color:#eee;
+  }
+}

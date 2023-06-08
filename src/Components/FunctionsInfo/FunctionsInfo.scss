@@ -1,0 +1,40 @@
+#functionsInfo{
+    margin-top: 50px;
+    .header {
+        width: 100%;
+        /* text */
+    
+        text-align: center;
+        /* H5/medium */
+    
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+    
+       
+    
+        /* Character/Title .85 */
+    
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 20px;
+        /* Inside auto layout */
+      }
+
+      .functionsList{
+        display: flex;
+        justify-content: space-between;
+
+        width: 1136px;
+        height: 97px;
+        margin: 0 auto;
+      }
+
+      .functionsButton{
+        width: fill;
+        height: fill;
+        margin: 10px;
+      }
+}

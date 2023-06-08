@@ -1,0 +1,55 @@
+.donate{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .header {
+        width: 100%;
+        /* text */
+    
+        text-align: center;
+        /* H5/medium */
+    
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+    
+       
+    
+        /* Character/Title .85 */
+    
+        color: rgba(0, 0, 0, 0.85);
+    
+        /* Inside auto layout */
+      }
+      .context {
+        /* text */
+    
+        width: 100%;
+        //height: 44px;
+    
+        /* Body/regular */
+    
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        /* or 157% */
+    
+        text-align: center;
+    
+        /* Character / Secondary .45 */
+    
+        color: rgba(0, 0, 0, 0.45);
+    
+        /* Inside auto layout */
+    
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      }
+}
