@@ -1,50 +1,70 @@
 /* SynthPlugin.css */
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-image: url('../../img/plugDark.png');
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-  }
-  
-  .button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #61dafb;
-    color: #282c34;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #34c9eb;
-  }
-  
-  .button:active {
-    background-color: #2092b2;
-  }
-  
-  .function-button {
-    background-color: #ff6347;
-    color: #ffffff;
-  }
-  
-  .function-button:hover {
-    background-color: #ff7f50;
-  }
-  
-  .function-button:active {
-    background-color: #cd5c5c;
-  }
-  
-  .slider {
-    width: 200px;
-    margin: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url('../../img/plugDark.png');
+  /* font-family: Arial, sans-serif; */
+  color: #ffffff;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+}
+
+.presets {
+  display: flex;
+  justify-content: center;
+}
+
+.functions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-play {
+  justify-self: center;
+}
+
+.button:hover {
+  background-color: #34c9eb;
+}
+
+.button:active {
+  background-color: #2092b2;
+}
+
+.function-button {
+  background-color: #ff6347;
+  color: #ffffff;
+}
+
+.function-button:hover {
+  background-color: #ff7f50;
+}
+
+.function-button:active {
+  background-color: #cd5c5c;
+}
+
+.slider {
+  width: 200px;
+  margin: 10px;
+}

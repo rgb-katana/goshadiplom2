@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './SynthPlugin.css'
+import './SynthPlugin.css';
 
 // Создаем контекст Web Audio API
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -45,7 +45,9 @@ function SynthPlugin() {
 
   useEffect(() => {
     // Загружаем импульсную респонсивность для реверберации
-    fetch('https://www.wolframcloud.com/obj/6c9fea46-7200-494c-b5dc-89c9bd309e02')
+    fetch(
+      'https://www.wolframcloud.com/obj/6c9fea46-7200-494c-b5dc-89c9bd309e02'
+    )
       .then(response => response.arrayBuffer())
       .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
       .then(audioBuffer => {
@@ -55,7 +57,7 @@ function SynthPlugin() {
     // Создаем кривую перегрузки для дисторшна
     const curve = new Float32Array(4096);
     for (let i = 0; i < 4096; i++) {
-      curve[i] = (3 * i / 4096 - 1.5) / (1 - Math.abs(3 * i / 4096 - 1.5));
+      curve[i] = ((3 * i) / 4096 - 1.5) / (1 - Math.abs((3 * i) / 4096 - 1.5));
     }
     waveShaperNode.curve = curve;
     waveShaperNode.oversample = '4x';
@@ -65,7 +67,7 @@ function SynthPlugin() {
   }, []);
 
   // Функция для изменения пресета
-  const changePreset = (presetName) => {
+  const changePreset = presetName => {
     setCurrentPreset(presets[presetName]);
     // Применяем параметры пресета к осциллятору и гейну
     audioSource.frequency.value = presets[presetName].frequency;
@@ -74,7 +76,7 @@ function SynthPlugin() {
   };
 
   // Функция для изменения времени задержки
-  const changeDelayTime = (event) => {
+  const changeDelayTime = event => {
     const newDelayTime = parseFloat(event.target.value);
     setDelayTime(newDelayTime);
     delayNode.delayTime.value = newDelayTime;
@@ -90,7 +92,7 @@ function SynthPlugin() {
       // Запускаем воспроизведение только после того, как пользователь нажал кнопку
       audioSource.start();
     }
-  }
+  };
 
   // Функции для включения/выключения эффектов
   const toggleDelay = () => {
@@ -103,7 +105,7 @@ function SynthPlugin() {
       gainNode.connect(delayNode);
     }
   };
-  
+
   const toggleReverb = () => {
     setIsReverbOn(!isReverbOn);
     if (isReverbOn) {
@@ -114,7 +116,7 @@ function SynthPlugin() {
       delayNode.connect(convolverNode);
     }
   };
-  
+
   const toggleDistortion = () => {
     setIsDistortionOn(!isDistortionOn);
     if (isDistortionOn) {
@@ -125,23 +127,47 @@ function SynthPlugin() {
       convolverNode.connect(waveShaperNode);
     }
   };
-  
 
   return (
     <div className="container">
       <h1 className="title">Web VST Synth Plugin</h1>
       <div className="controls">
-        <button className="button" onClick={() => changePreset('preset1')}>Preset 1</button>
-        <button className="button" onClick={() => changePreset('preset2')}>Preset 2</button>
+        <div className="presets">
+          <button className="button" onClick={() => changePreset('preset1')}>
+            Preset 1
+          </button>
+          <button className="button" onClick={() => changePreset('preset2')}>
+            Preset 2
+          </button>
+        </div>
+
         <div>
-        <label>Delay Time: </label>
-        <input className="slider" type="range" min="0" max="1" step="0.01" value={delayTime} onChange={changeDelayTime} />
-      </div>
-        <button className="button" onClick={togglePlay}>{isPlaying ? 'Stop' : 'Play'}</button>
-        <div className='functions'>
-        <button className="function-button" onClick={toggleDelay}>{isDelayOn ? 'Disable Delay' : 'Enable Delay'}</button>
-      <button className="function-button" onClick={toggleReverb}>{isReverbOn ? 'Disable Reverb' : 'Enable Reverb'}</button>
-      <button className="function-button" onClick={toggleDistortion}>{isDistortionOn ? 'Disable Distortion' : 'Enable Distortion'}</button>
+          <label>Delay Time: </label>
+          <input
+            className="slider"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value={delayTime}
+            onChange={changeDelayTime}
+          />
+        </div>
+
+        <button className="button button-play" onClick={togglePlay}>
+          {isPlaying ? 'Stop' : 'Play'}
+        </button>
+
+        <div className="functions">
+          <button className="function-button" onClick={toggleDelay}>
+            {isDelayOn ? 'Disable Delay' : 'Enable Delay'}
+          </button>
+          <button className="function-button" onClick={toggleReverb}>
+            {isReverbOn ? 'Disable Reverb' : 'Enable Reverb'}
+          </button>
+          <button className="function-button" onClick={toggleDistortion}>
+            {isDistortionOn ? 'Disable Distortion' : 'Enable Distortion'}
+          </button>
         </div>
       </div>
     </div>

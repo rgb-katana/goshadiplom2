@@ -11,7 +11,7 @@
     text-align: center;
     /* H5/medium */
 
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -32,7 +32,7 @@
 
     /* Body/regular */
 
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -64,7 +64,6 @@
     align-items: flex-start;
     padding-top: 48px;
 
-
     /* Neutral/1 */
 
     color: rgba(0, 0, 0, 0.45);
@@ -76,7 +75,7 @@
     flex-grow: 0;
     justify-content: space-between;
   }
-  .author{
+  .author {
     padding: 10px;
     margin-top: 80px;
     border: 1px solid #585858;
