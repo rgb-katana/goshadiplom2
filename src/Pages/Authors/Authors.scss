@@ -1,84 +1,74 @@
 #authors {
-  width: 1168px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  .header {
-    width: 100%;
-    /* text */
+    width: 1168px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .header {
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 15px;
+    }
+    .text {
+        width: 100%;
 
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140.9%;
+
+        text-align: center;
+
+        color: rgba(0, 0, 0, 0.45);
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .row {
+        width: 100%;
+
+        /* .Page-Header(Legacy) */
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 48px;
+
+        /* Neutral/1 */
+
+        color: rgba(0, 0, 0, 0.45);
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        justify-content: space-between;
+    }
+    .author {
+        padding: 10px;
+        margin-top: 80px;
+        border: 1px solid #585858;
+        border-radius: 5px;
+    }
+}
+
+.fio {
     text-align: center;
-    /* H5/medium */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-
-    /* Character/Title .85 */
-
-    color: rgba(0, 0, 0, 0.85);
-
-    /* Inside auto layout */
-  }
-  .text {
-    /* text */
-
     width: 100%;
-    //height: 44px;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
 
-    /* Body/regular */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    /* or 157% */
-
-    text-align: center;
-
-    /* Character / Secondary .45 */
-
-    color: rgba(0, 0, 0, 0.45);
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-  .row {
-    width: 100%;
-
-    /* .Page-Header(Legacy) */
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding-top: 48px;
-
-    /* Neutral/1 */
-
-    color: rgba(0, 0, 0, 0.45);
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    justify-content: space-between;
-  }
-  .author {
-    padding: 10px;
-    margin-top: 80px;
-    border: 1px solid #585858;
-    border-radius: 5px;
-  }
+.params {
+    font-size: 20px;
 }
