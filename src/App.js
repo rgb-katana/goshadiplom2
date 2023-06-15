@@ -14,11 +14,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
-        <Route index element={<Index />} />
-        <Route path="/authors" element={<Authors />} />
-        <Route path="/contacts" element={<Contacts />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route index element={<Index />} />
+          <Route path="/authors" element={<Authors />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
