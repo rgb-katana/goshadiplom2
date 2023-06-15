@@ -1,0 +1,39 @@
+[
+    {
+        "buttonText":"First",
+        "type":"text",
+        "title":"Текстовое описание у данной функции",
+        "context":"Тут может быть текст"
+
+    },
+    {
+        "buttonText":"Second",
+        "type":"video",
+        "title":"А тут видео к функции",
+        "url":"https://www.youtube.com/watch?v=q1ciINr7ePs&feature=youtu.be"
+    },
+    {
+        "buttonText":"Third",
+        "type":"text",
+        "title":"",
+        "context":""
+    },
+    {
+        "buttonText":"Itakdalee",
+        "type":"text",
+        "title":"",
+        "context":""
+    },
+    {
+        "buttonText":"Idontknow",
+        "type":"text",
+        "title":"",
+        "context":""
+    },
+    {
+        "buttonText":"Tumba",
+        "type":"text",
+        "title":"",
+        "context":""
+    }
+]
