@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/goshadiplom2/static/css/main.f3768afd.css",
-    "main.js": "/goshadiplom2/static/js/main.2320d1ce.js",
+    "main.js": "/goshadiplom2/static/js/main.ebe51f24.js",
     "static/js/787.07eb3bab.chunk.js": "/goshadiplom2/static/js/787.07eb3bab.chunk.js",
     "static/media/plugDark.png": "/goshadiplom2/static/media/plugDark.f3b0894181dca3ce1c80.png",
+    "static/media/qr.png": "/goshadiplom2/static/media/qr.80a643fc8684b0aae986.png",
     "static/media/map.jpg": "/goshadiplom2/static/media/map.04cd046325f27c9df52a.jpg",
     "index.html": "/goshadiplom2/index.html",
     "main.f3768afd.css.map": "/goshadiplom2/static/css/main.f3768afd.css.map",
-    "main.2320d1ce.js.map": "/goshadiplom2/static/js/main.2320d1ce.js.map",
+    "main.ebe51f24.js.map": "/goshadiplom2/static/js/main.ebe51f24.js.map",
     "787.07eb3bab.chunk.js.map": "/goshadiplom2/static/js/787.07eb3bab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f3768afd.css",
-    "static/js/main.2320d1ce.js"
+    "static/js/main.ebe51f24.js"
   ]
 }
